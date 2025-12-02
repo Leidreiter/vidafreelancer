@@ -1,0 +1,129 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.recursos {
+    width: 100%;
+    background-color: v.$grisOscuro;
+    padding: 6rem 2rem;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+
+    @include m.tablet{
+        padding: 6rem;
+    }
+}
+
+.recursos::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: url('/src/img/bg.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+             
+  z-index: -1;
+  opacity:0.1;
+}
+
+.recursos-title {
+    width: 90%;
+    max-width: 144rem;
+    margin-bottom: 4rem;
+    color: v.$blanco;
+    font-family: 'Horizon', sans-serif;
+    text-wrap: balance;
+
+    @include m.tablet{
+        width: 100%;
+        margin: 0 auto;
+        text-wrap: nowrap;
+    }
+}
+
+.recursos-container {
+    width: 100%;
+    max-width: 144rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+
+    @include m.tablet{
+        flex-direction: row;
+        padding: 4rem 0;
+    }
+}
+.bg1{
+    background: url('/src/img/capitulos/01.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.bg2{
+    background: url('/src/img/capitulos/02.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.bg3{
+    background: url('/src/img/capitulos/03.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.recurso {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 40rem;
+    border-radius: 12px;
+
+    @include m.tablet{
+        height: 60rem;
+    }
+}
+
+.recurso-title {
+    color: v.$blanco;
+    font-family: 'Horizon', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+.H2{
+    font-family: 'Horizon Outlined', sans-serif;
+}
+
+.recurso-description {
+    color: v.$blanco;
+    text-align: left;
+}
+
+.recurso-link {
+    display: block;
+    padding: 14px 32px;
+    background: none;
+    color: v.$blanco;
+    font-family: 'Horizon', sans-serif;
+    font-size: 1.6rem;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid v.$blanco;
+    border-radius: 12px 0 12px 0;
+
+    &:hover {
+        color: v.$primario;
+        border: 2px solid v.$primario;
+    }
+}
+
+.recursoBG {
+    width: 100%;
+    background-color: #000000e0;
+    padding: 3rem 2rem;
+
+    @include m.tablet{
+        padding: 6rem 2rem;
+    }
+}

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/build/css/app.css" />
+
+  <!-- Fuente e íconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <link rel="icon" href="src/img/favicon.svg" type="image/svg+xml">
+  <title>Vida Freelancer, un podcast diferente</title>
+</head>
+
+<body>
+  <div class="hero">
+    <div class="video-background">
+      <video class="video-bg" autoplay muted loop playsinline webkit-playsinline>
+        <source src="/src/video/heroBG.mp4" type="video/mp4">
+      </video>
+  
+    </div>
+  
+    <div class="overlay">
+        <!-- TODO TU CONTENIDO IGUAL -->
+        <header class="header">
+          <div class="header-contenido">
+            <div class="headerL">
+              <img src="/src/img/logo.png" alt="logo podcast vida freelancer" class="logo">
+            </div>
+            <div class="headerR">
+              <div class="redes">
+                <a href="https://www.instagram.com/soymarcusdev/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@soymarcusdev" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/@soymarcusdev" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+              </div>
+              <div class="menu">
+                <button id="btn-menu" class="btn-menu">
+                  <span class="hamburguesa"></span>
+                  <span class="texto-menu">Menú</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </header>
+  
+        <nav id="sidebar" class="sidebar">
+          <ul>
+            <li><a href="#podcast">El podcast</a></li>
+            <li><a href="#capitulos">Capítulos</a></li>
+            <li><a href="#recursos">Recursos</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+          </ul>
+        </nav>
+  
+        <div class="contenido-hero">
+          <div class="titulo-container">
+            <h1>Un podcast</h1>
+            <h2>diferente</h2>
+            <p class="copy">¿Te has preguntado cómo comenzar en el mundo freelance?</p>
+          </div>
+        </div>
+  
+        <div class="promo-banner">
+          <div class="promo-track">
+            <div class="promo-content">
+              <span>Aprende a vivir como freelancer</span>
+              <span class="separator">|</span>
+              <span>Aprende a vivir como freelancer</span>
+              <span class="separator">|</span>
+              <span>Aprende a vivir como freelancer</span>
+              <span class="separator">|</span>
+              <span>Aprende a vivir como freelancer</span>
+              <span class="separator">|</span>
+              <span>Aprende a vivir como freelancer</span>
+              <span class="separator">|</span>
+              <span>Aprende a vivir como freelancer</span>
+              <span class="separator">|</span>
+            </div>
+          </div>
+        </div>
+  
+    </div>
+  </div>
+
+  <section class="sobre-podcast" id="podcast">
+    <h2 class="sp-title">Sobre el Podcast</h2>
+    <div class="separador"></div>
+
+    <p class="sp-description">
+      Un espacio donde exploramos tecnología, creatividad, ingeniería y las historias detrás de quienes mueven el mundo
+      digital.
+    </p>
+
+    <div class="sp-parallax"></div>
+
+    <div class="sp-stats">
+
+      <div class="sp-stat">
+        <p class="sp-stat-top">episodios</p>
+        <h3 class="sp-number" data-target="50">0</h3>
+        <p class="sp-stat-bottom">Contenido producido de forma constante para construir una comunidad.</p>
+      </div>
+
+      <div class="sp-stat">
+        <p class="sp-stat-top">oyentes recurrentes</p>
+        <h3 class="sp-number" data-target="1500">0</h3>
+        <p class="sp-stat-bottom">Una audiencia fiel que regresa cada semana en busca de insights y perspectivas nuevas.
+        </p>
+      </div>
+
+      <div class="sp-stat">
+        <p class="sp-stat-top">experiencias exclusivas</p>
+        <h3 class="sp-number" data-target="20">0</h3>
+        <p class="sp-stat-bottom">Creadores de contenidos y referentes de la industria brindan sus testimonios.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="capitulos-full" id="capitulos">
+
+
+    <div class="capitulos-header">
+      <h2 class="capitulos-title">Capítulos</h2>
+      <div class="carousel-controls" aria-label="Controles del carrusel">
+        <button class="carousel-control" type="button" data-direction="prev" aria-label="Capítulo anterior">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="carousel-control" type="button" data-direction="next" aria-label="Capítulo siguiente">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="popup" id="popup1">
+      <div class="popup-content">
+        <!-- <button class="popup-close">&times;</button> -->
+
+        <div class="popup-left">
+          <h3>Título del capítulo 1</h3>
+
+          <div class="popup-copy">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan elit nisi,
+              nec elementum odio laoreet eu. Cras augue turpis, vestibulum et leo ac, tincidunt hendrerit elit.
+            </p>
+            <p>Curabitur orci urna, iaculis ac ipsum eget, ultrices ultricies ligula. Vestibulum dignissim,
+              nulla sed eleifend molestie, enim elit pulvinar nisl, eget vestibulum libero.</p>
+          </div>
+        </div>
+
+        <div class="popup-right">
+          <div class="youtube-video">
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <audio controls class="audio">
+            <source src="audio/audio1.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-wrapper">
+      <div class="carousel-track">
+
+        <!-- Cards -->
+        <div class="card" data-popup="popup1">
+          <div class="imagen-capitulo cap1"></div>
+          <div class="card-contenido">
+            <span>Unidad 1: ¿Soy freelancer?</span>
+            <h3>Título del capítulo</h3>
+            <p>descripción corta del capítulo y la duración del mismo para el usuario</p>
+          </div>
+        </div>
+
+        <div class="card" data-popup="popup2">
+          <div class="imagen-capitulo cap2"></div>
+          <div class="card-contenido">
+            <span>Unidad 1: ¿Soy freelancer?</span>
+            <h3>Título del capítulo</h3>
+            <p>descripción corta del capítulo y la duración del mismo para el usuario</p>
+          </div>
+        </div>
+
+        <div class="card" data-popup="popup3">
+          <div class="imagen-capitulo cap3"></div>
+          <div class="card-contenido">
+            <span>Unidad 1: ¿Soy freelancer?</span>
+            <h3>Título del capítulo</h3>
+            <p>descripción corta del capítulo y la duración del mismo para el usuario</p>
+          </div>
+        </div>
+
+        <!-- Se duplican para efecto infinito -->
+        <div class="card" data-popup="popup4">
+          <div class="imagen-capitulo cap4"></div>
+          <div class="card-contenido">
+            <span>Unidad 1: ¿Soy freelancer?</span>
+            <h3>Título del capítulo</h3>
+            <p>descripción corta del capítulo y la duración del mismo para el usuario</p>
+          </div>
+        </div>
+
+        <div class="card" data-popup="popup5">
+          <div class="imagen-capitulo cap5"></div>
+          <div class="card-contenido">
+            <span>Unidad 1: ¿Soy freelancer?</span>
+            <h3>Título del capítulo</h3>
+            <p>descripción corta del capítulo y la duración del mismo para el usuario</p>
+          </div>
+        </div>
+
+        <div class="card" data-popup="popup6">
+          <div class="imagen-capitulo cap6"></div>
+          <div class="card-contenido">
+            <span>Unidad 1: ¿Soy freelancer?</span>
+            <h3>Título del capítulo</h3>
+            <p>descripción corta del capítulo y la duración del mismo para el usuario</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="recursos" id="recursos">
+
+    <h2 class="recursos-title"><span class="H2">Descarga</span> los recursos</h2>
+
+    <div class="recursos-container fade-item">
+
+      <div class="recurso bg1">
+        <div class="recursoBG">
+          <h3 class="recurso-title">Recurso 1</h3>
+          <p class="recurso-description">Descripción breve del recurso para el usuario.</p>
+          <a href="#" class="recurso-link">Descargar</a>
+        </div>
+      </div>
+
+      <div class="recurso bg2">
+        <div class="recursoBG">
+          <h3 class="recurso-title">Recurso 2</h3>
+          <p class="recurso-description">Descripción breve del recurso para el usuario.</p>
+          <a href="#" class="recurso-link">Descargar</a>
+        </div>
+      </div>
+
+      <div class="recurso bg3">
+        <div class="recursoBG">
+          <h3 class="recurso-title">Recurso 3</h3>
+          <p class="recurso-description">Descripción breve del recurso para el usuario.</p>
+          <a href="#" class="recurso-link">Descargar</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="sobre-mi" id="sobre-mi">
+    <div class="sobre-mi-container">
+
+      <div class="sm-left">
+        <h2 class="sm-title">Sobre mí</h2>
+        <p class="sm-text">
+          Ser diseñador y desarrollador web freelancer es vivir entre creatividad, estrategia y gestión. Tras más de
+          diez años trabajando para agencias, empresas y emprendedores de distintos países, descubrí que la
+          independencia se construye con método y decisiones claras.
+        </p>
+        <p class="sm-text">
+          Hoy combino esa experiencia con mis propios
+          proyectos, como Hola Mundo Store, y en este podcast comparto lo que aprendí sobre clientes, procesos y cómo
+          sostener un negocio personal.</p>
+        <a href="https://soymarcus.pages.dev/" target="_blank" class="sm-btn">Conocer más</a>
+      </div>
+
+      <div class="sm-right"></div>
+    </div>
+
+    <!-- Sponsors -->
+    <p class="sponsors-title">Proyectos 2026</p>
+
+    <div class="sponsors-logos">
+      <a href="https://soymarcus.pages.dev" target="_blank">
+        <img src="/src/img/logos/soymarcus.svg" class="sponsor fade-item" alt="logo soy marcus">
+      </a>
+      <a href="https://holamundostore.netlify.app/">
+        <img src="/src/img/logos/holamundostore.svg" class="sponsor fade-item" alt="logo hola mundo store">
+      </a>
+      <img src="/src/img/logos/academiasoymarcus.svg" class="sponsor fade-item" alt="logo academia soy marcus">
+      <img src="/src/img/logos/codeinjection.svg" class="sponsor fade-item" alt="logo code injection">
+      <a href="https://vidafreelancer.netlify.app/">
+        <img src="/src/img/logos/vidafreelancer.svg" class="sponsor fade-item" alt="logo vida freelance">
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-flex">
+      <div class="logo-footer float">
+        <img src="/src/img/parallax.webp" alt="logo podcast vida freelancer">
+      </div>
+      <div class="footer-info">
+        <div class="footer-top">
+          <div class="redes">
+            <a href="https://www.instagram.com/soymarcusdev/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@soymarcusdev" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@soymarcusdev" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <div class="academia">
+            <p class="copy">Si quieres aprender más visita mi academia</p>
+            <a href="https://soymarcus.pages.dev/" target="_blank" class="sm-btn">Ingresar</a>
+          </div>
+        </div>
+        <div class="footer-bot">
+          <p class="copyright">© 2025 Todos los derechos reservados. Hecho con ♥️ por mi mismo.</p>
+          <div class="madeby">
+            <a href="https://soymarcus.pages.dev" target="_blank">
+              <img src="/src/img/designby.png" alt="Diseño y desarrollo por SoyMarcus">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="/src/js/app.js"></script>
+  <script src="/src/js/cardsypopup.js"></script>
+  <script src="/src/js/podcast.js"></script>
+  <script src="/src/js/aboutMe.js"></script>
+  <script src="/src/js/contacto.js"></script>
+  <script src="/includes/templates/headeryfooter.js"></script>
+  <script src="/src/js/modernizr.js"></script>
+</body>
+
+</html>

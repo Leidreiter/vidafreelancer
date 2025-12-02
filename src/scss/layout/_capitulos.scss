@@ -1,0 +1,158 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.capitulos-full {
+  width: 100%;
+  background: #000;
+  padding: 6rem 2rem;
+  color: #fff;
+  overflow: hidden; /* Corta las cards a los bordes */
+}
+
+
+.capitulos-header {
+  width: 90%;
+  max-width: 144rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 2rem;
+
+  @include m.tablet{
+    flex-direction: row;
+    margin-bottom: 4rem;
+  }
+}
+
+.capitulos-title {
+  text-align: left;
+  margin: 0;
+  font-family: 'Horizon', sans-serif;
+}
+
+.carousel-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.carousel-control {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  color: #fff;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color .3s ease, color .3s ease;
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+  background-color: v.$primario;
+  color: v.$negro;
+}
+
+.carousel-control:focus {
+  outline: 2px solid v.$primario;
+  outline-offset: 2px;
+}
+
+/* CARRUSEL */
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden; /* Corta extremos */
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  animation: moveCarousel 20s linear infinite;
+}
+
+.carousel-track.is-manual {
+  animation: none;
+  transition: transform .5s ease;
+}
+
+@keyframes moveCarousel {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+.card {
+  background: v.$grisOscuro;
+  border-radius: 12px;
+  height: 50rem;
+  cursor: pointer;
+  transition: transform .2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.imagen-capitulo {
+  width: 100%;
+  height: 26rem;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 15px;
+}
+.cap1 {
+  background: url('/src/img/capitulos/01.jpeg') center/cover no-repeat;
+}
+.cap2 {
+  background: url('/src/img/capitulos/02.jpeg') center/cover no-repeat;
+}
+.cap3 {
+  background: url('/src/img/capitulos/03.jpeg') center/cover no-repeat;
+}
+.cap4 {
+  background: url('/src/img/capitulos/04.jpeg') center/cover no-repeat;
+}
+.cap5 {
+  background: url('/src/img/capitulos/05.jpeg') center/cover no-repeat;
+}
+.cap6 {
+  background: url('/src/img/capitulos/06.jpeg') center/cover no-repeat;
+}
+
+.card-contenido{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+  padding: 1rem 3rem;
+}
+.card-contenido span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  background-color: v.$primario;
+  display: inline-block;
+  color: v.$negro;
+  padding: .4rem 1rem;
+}
+.card h3 {
+  font-family: 'Horizon', sans-serif;
+  text-align: center;
+  margin: 0;
+  width: 32rem;
+}
+
+.card p {
+  margin: 0;
+  opacity: .7;
+  color: grey;
+  font-size: 1.6rem;
+  text-align: center;
+}

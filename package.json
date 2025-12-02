@@ -1,0 +1,26 @@
+{
+  "name": "vida-freelancer",
+  "version": "1.0.0",
+  "description": "Vida freelancer, un podcast diferente",
+  "type": "module",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "keywords": [
+    "npm",
+    "gulp",
+    "sass"
+  ],
+  "author": "Martin Leidreiter",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.94.1"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0"
+  }
+}

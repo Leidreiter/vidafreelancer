@@ -1,0 +1,30 @@
+$fuente_principal :  "Montserrat", sans-serif;
+$fa-font-path: "../fonts";
+
+// Colores
+$negro: #000000;
+$blanco: #FFFFFF;
+$primario: #00B8D9;
+$gris: grey;
+$grisOscuro: #111111;
+
+// Media Queries
+$tel: 480px;
+$tablet: 768px;
+$desk: 1200px;
+$xl: 1400px;
+
+// Añade esto al principio del archivo SCSS para las fuentes
+@font-face {
+    font-family: 'Horizon';
+    src: url('/src/fonts/horizon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Horizon Outlined';
+    src: url('/src/fonts/horizon_outlined.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }

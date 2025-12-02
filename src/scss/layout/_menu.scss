@@ -1,0 +1,109 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.menu {
+  .btn-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Horizon', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    @include m.tablet{
+      font-size: 3rem;
+    }
+
+    &:hover {
+      background: white;
+      color: black;
+    }
+
+    .hamburguesa {
+      display: block;
+      width: 25px;
+      height: 2px;
+      background: currentColor;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: currentColor;
+        left: 0;
+      }
+
+      &::before {
+        top: -8px;
+      }
+
+      &::after {
+        bottom: -8px;
+      }
+    }
+  }
+}
+
+// Sidebar
+.sidebar {
+  right: -100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 99;
+  transition: right 0.4s ease;
+  padding: 200px 60px;
+  
+
+  @include m.tablet{
+    right: -45%;
+    width: 45%;
+    padding: 120px 40px;
+  }
+
+  &.active {
+    right: 0;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      line-height: 2;
+      @include m.tablet{
+        line-height: 1.4;
+      }
+
+      a {
+        text-align: right;
+        color: v.$blanco;
+        text-decoration: none;
+        font-size: 2.4rem;
+        transition: all 0.3s ease;
+        display: block;
+        font-family: 'Horizon Outlined', sans-serif;
+        @include m.tablet{
+          font-size: 4.6rem;
+        }
+
+        &:hover {
+          font-family: 'Horizon', sans-serif;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,131 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.sobre-mi {
+  width: 100%;
+  background: v.$negro;
+  color: v.$blanco;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 2rem;
+
+  .sobre-mi-container {
+    width: 100%;
+    max-width: 144rem;
+    display: flex;
+    flex-direction: column;
+    background: #111;
+    border-radius: 5rem 0 5rem 0;
+    overflow: hidden;
+    @include m.tablet {
+      width: 90%;
+      flex-direction: row;
+    }
+  }
+
+  /* Columna izquierda */
+  .sm-left {
+    flex: 1;
+    padding: 4rem 2rem;
+    @include m.tablet {
+      padding: 6rem 4rem;
+    }
+
+    .sm-title {
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-family: 'Horizon', sans-serif;
+    }
+
+    .sm-text {
+      color: v.$gris;
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      text-wrap: balance;
+    }
+  }
+
+  /* Columna derecha */
+  .sm-right {
+    flex: 1;
+    padding: 20rem 0;
+    background: url('/src/img/Martin_Leidreiter.jpg') center/cover no-repeat;
+  }
+
+  /* Sponsors título */
+  .sponsors-title {
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: grey;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  /* Logos */
+  .sponsors-logos {
+    width: 90%;
+    max-width: 144rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    @include m.tablet{
+      justify-content: space-between;
+    }
+  }
+
+  .sponsor {
+    opacity: 0;
+    transform: translateY(20px);
+    height: 6rem;       // la altura que vos quieras
+    width: auto;
+    display: block;
+    object-fit: contain;
+  }
+}
+
+/* Fade-up animation */
+.fade-up {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+@media (max-width: 900px) {
+  .sobre-mi-container {
+    grid-template-columns: 1fr;
+  }
+
+  .sm-right {
+    height: 300px;
+  }
+
+  .sponsors-logos {
+    justify-content: center;
+  }
+}
+
+.sm-btn {
+  display: block;
+  padding: 14px 32px;
+  background: none;
+  color: v.$blanco;
+  font-family: 'Horizon', sans-serif;
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid v.$blanco;
+  border-radius: 12px 0 12px 0;
+  align-self: center;
+
+  @include m.tablet{
+    display: inline-block;
+  }
+  &:hover{
+    color: v.$primario;
+    border: 2px solid v.$primario;
+  }
+}
