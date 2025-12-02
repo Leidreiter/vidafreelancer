@@ -89,9 +89,10 @@
 .card {
   background: v.$grisOscuro;
   border-radius: 12px;
-  height: 50rem;
   cursor: pointer;
   transition: transform .2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
@@ -129,7 +130,8 @@
   align-items: center;
   justify-content: center;
   row-gap: 2rem;
-  padding: 1rem 3rem;
+  padding: 2rem 3rem;
+  flex-grow: 1;
 }
 .card-contenido span {
   font-size: 1.2rem;
