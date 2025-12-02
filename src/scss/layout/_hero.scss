@@ -93,44 +93,44 @@
   }
 }
 
-// Promo Banner
-.promo-banner {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px 0;
-  overflow: hidden;
-  z-index: 10;
-  border-top: 1px solid v.$gris;
 
-  .promo-track {
+
+.promo-banner {
+    width: 100%;
+    padding: 1rem 0;
+    overflow: hidden;
+    z-index: 10;
+    background-color: #000000;
+}
+
+.promo-track {
     display: flex;
     white-space: nowrap;
+}
 
-    .promo-content {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      animation: scroll 20s linear infinite;
+.promo-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    animation: scroll 20s linear infinite;
+}
 
-      span {
-        font-size: 2rem;
-        font-weight: 700;
-        color: v.$blanco;
-        text-transform: uppercase;
-        font-family: 'Horizon', sans-serif;
-      }
+span {
+    font-size: 1.4rem;
+    color: #ffffff;
+}
 
-      .separator {
-        font-size: 2rem;
-        color: rgba(255, 255, 255, 0.5);
-      }
-    }
-  }
+.separator {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 @keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
