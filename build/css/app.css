@@ -738,6 +738,7 @@ body > section {
 }
 @media (min-width: 768px) {
   .footer-flex {
+    width: 90%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
